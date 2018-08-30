@@ -2,7 +2,7 @@
 namespace remocon {
 
     //% blockId=send block="メーカー%v テレビ%vの電源を操作する"
-    export function send(): void {
+    function send(): void {
         let list = [
             3464, 1736, 426, 447, 386, 1248, 419, 447, 386, 447,
             386, 447, 386, 447, 387, 447, 385, 448, 392, 441,
