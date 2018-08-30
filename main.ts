@@ -3,12 +3,7 @@ namespace remocon {
     let r = 0
     let remocon :number
 
-    //let list: number[] = []
-    //let remocon_name: number
-
-    //1611
     const list =[
-    //const list1611 =[
         3464,1736, 426, 447, 386,1248, 419, 447, 386, 447,
          386, 447, 386, 447, 387, 447, 385, 448, 392, 441,
          386, 447, 386, 447, 386, 448, 386, 447, 386,1247,
@@ -20,6 +15,7 @@ namespace remocon {
          386, 447, 386,1247, 420, 447, 386,1247, 420,1248,
          419,1246, 427,1241, 421, 447, 386,1247, 420
         ]
+
         /*
         //1612
     const list1612 =[
@@ -51,8 +47,8 @@ namespace remocon {
         */
         //  send()
 
-    //% blockId=send block="信号を送信 %v"
-    export function send(list: number[], remocon: number = 1611): void {
+    //% blockId=send block="信号を送信"
+    export function send(list: number[]): void {
         for (let i = 0; i <= list.length - 1; i++) {
             // Generate flashing signal
             if (i % 2 == 1) {
@@ -71,8 +67,4 @@ namespace remocon {
             }
         }
     
-    //% blockId=set_remocon block="リモコンを設定 %t"
-    export function remocon_name(name: number = 1611): void {
-        remocon = name
-    }
 }
