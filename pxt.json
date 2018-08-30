@@ -1,6 +1,6 @@
 {
     "name": "remocon",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "ir-remocon",
     "license": "MIT",
     "dependencies": {
